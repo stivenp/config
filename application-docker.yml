@@ -14,10 +14,11 @@ spring:
   zipkin:
     base-url: http://zipkin-server:9411/
     sender:
-      type: rabbit
+      type: web
+      #type: rabbit
     service:
       name: ${spring.application.name}
-  rabbitmq.host: microservicios-rabbitmq38
+  #rabbitmq.host: microservicios-rabbitmq38
   sleuth:
     sampler:
       probability: 1
