@@ -5,6 +5,10 @@ config:
         id: frontendapp
         secret: 12345
       jwt.key: algun_codigo_secreto_aeiou
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
 
 spring:
   zipkin:
