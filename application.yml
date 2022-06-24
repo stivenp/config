@@ -5,3 +5,7 @@ config:
         id: frontendapp
         secret: 12345
       jwt.key: algun_codigo_secreto_aeiou
+
+spring:
+  zipkin.base-url: http://zipkin-server:9411/
+  rabbitmq.host: rabbitmq38
